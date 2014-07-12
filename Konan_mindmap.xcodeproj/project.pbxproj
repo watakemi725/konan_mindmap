@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		463E5B56195F94C400FA26BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463E5B55195F94C400FA26BE /* Foundation.framework */; };
+		463E5B58195F94C400FA26BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463E5B57195F94C400FA26BE /* CoreGraphics.framework */; };
+		463E5B5A195F94C400FA26BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463E5B59195F94C400FA26BE /* UIKit.framework */; };
+		463E5B60195F94C400FA26BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 463E5B5E195F94C400FA26BE /* InfoPlist.strings */; };
+		463E5B62195F94C400FA26BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 463E5B61195F94C400FA26BE /* main.m */; };
+		463E5B66195F94C400FA26BE /* LCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 463E5B65195F94C400FA26BE /* LCAppDelegate.m */; };
+		463E5B69195F94C400FA26BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463E5B67195F94C400FA26BE /* Main.storyboard */; };
+		463E5B6C195F94C400FA26BE /* LCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 463E5B6B195F94C400FA26BE /* LCViewController.m */; };
+		463E5B6E195F94C400FA26BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 463E5B6D195F94C400FA26BE /* Images.xcassets */; };
+		463E5B75195F94C400FA26BE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463E5B74195F94C400FA26BE /* XCTest.framework */; };
+		463E5B76195F94C400FA26BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463E5B55195F94C400FA26BE /* Foundation.framework */; };
+		463E5B77195F94C400FA26BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463E5B59195F94C400FA26BE /* UIKit.framework */; };
+		463E5B7F195F94C400FA26BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 463E5B7D195F94C400FA26BE /* InfoPlist.strings */; };
+		463E5B81195F94C500FA26BE /* Konan_mindmapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 463E5B80195F94C500FA26BE /* Konan_mindmapTests.m */; };
+		463E5B8B195FA08C00FA26BE /* gurade.png in Resources */ = {isa = PBXBuildFile; fileRef = 463E5B8A195FA08C00FA26BE /* gurade.png */; };
+		463E5B8D195FA66100FA26BE /* chichi.png in Resources */ = {isa = PBXBuildFile; fileRef = 463E5B8C195FA66100FA26BE /* chichi.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		463E5B78195F94C400FA26BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 463E5B4A195F94C400FA26BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 463E5B51195F94C400FA26BE;
+			remoteInfo = Konan_mindmap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		463E5B52195F94C400FA26BE /* Konan_mindmap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konan_mindmap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		463E5B55195F94C400FA26BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		463E5B57195F94C400FA26BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		463E5B59195F94C400FA26BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		463E5B5D195F94C400FA26BE /* Konan_mindmap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Konan_mindmap-Info.plist"; sourceTree = "<group>"; };
+		463E5B5F195F94C400FA26BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		463E5B61195F94C400FA26BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		463E5B63195F94C400FA26BE /* Konan_mindmap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Konan_mindmap-Prefix.pch"; sourceTree = "<group>"; };
+		463E5B64195F94C400FA26BE /* LCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAppDelegate.h; sourceTree = "<group>"; };
+		463E5B65195F94C400FA26BE /* LCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAppDelegate.m; sourceTree = "<group>"; };
+		463E5B68195F94C400FA26BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		463E5B6A195F94C400FA26BE /* LCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCViewController.h; sourceTree = "<group>"; };
+		463E5B6B195F94C400FA26BE /* LCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCViewController.m; sourceTree = "<group>"; };
+		463E5B6D195F94C400FA26BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		463E5B73195F94C400FA26BE /* Konan_mindmapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Konan_mindmapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		463E5B74195F94C400FA26BE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		463E5B7C195F94C400FA26BE /* Konan_mindmapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Konan_mindmapTests-Info.plist"; sourceTree = "<group>"; };
+		463E5B7E195F94C400FA26BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		463E5B80195F94C500FA26BE /* Konan_mindmapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Konan_mindmapTests.m; sourceTree = "<group>"; };
+		463E5B8A195FA08C00FA26BE /* gurade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gurade.png; sourceTree = "<group>"; };
+		463E5B8C195FA66100FA26BE /* chichi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chichi.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		463E5B4F195F94C400FA26BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463E5B58195F94C400FA26BE /* CoreGraphics.framework in Frameworks */,
+				463E5B5A195F94C400FA26BE /* UIKit.framework in Frameworks */,
+				463E5B56195F94C400FA26BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463E5B70195F94C400FA26BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463E5B75195F94C400FA26BE /* XCTest.framework in Frameworks */,
+				463E5B77195F94C400FA26BE /* UIKit.framework in Frameworks */,
+				463E5B76195F94C400FA26BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		463E5B49195F94C400FA26BE = {
+			isa = PBXGroup;
+			children = (
+				463E5B5B195F94C400FA26BE /* Konan_mindmap */,
+				463E5B7A195F94C400FA26BE /* Konan_mindmapTests */,
+				463E5B54195F94C400FA26BE /* Frameworks */,
+				463E5B53195F94C400FA26BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		463E5B53195F94C400FA26BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				463E5B52195F94C400FA26BE /* Konan_mindmap.app */,
+				463E5B73195F94C400FA26BE /* Konan_mindmapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		463E5B54195F94C400FA26BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				463E5B55195F94C400FA26BE /* Foundation.framework */,
+				463E5B57195F94C400FA26BE /* CoreGraphics.framework */,
+				463E5B59195F94C400FA26BE /* UIKit.framework */,
+				463E5B74195F94C400FA26BE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		463E5B5B195F94C400FA26BE /* Konan_mindmap */ = {
+			isa = PBXGroup;
+			children = (
+				463E5B8C195FA66100FA26BE /* chichi.png */,
+				463E5B8A195FA08C00FA26BE /* gurade.png */,
+				463E5B64195F94C400FA26BE /* LCAppDelegate.h */,
+				463E5B65195F94C400FA26BE /* LCAppDelegate.m */,
+				463E5B67195F94C400FA26BE /* Main.storyboard */,
+				463E5B6A195F94C400FA26BE /* LCViewController.h */,
+				463E5B6B195F94C400FA26BE /* LCViewController.m */,
+				463E5B6D195F94C400FA26BE /* Images.xcassets */,
+				463E5B5C195F94C400FA26BE /* Supporting Files */,
+			);
+			path = Konan_mindmap;
+			sourceTree = "<group>";
+		};
+		463E5B5C195F94C400FA26BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				463E5B5D195F94C400FA26BE /* Konan_mindmap-Info.plist */,
+				463E5B5E195F94C400FA26BE /* InfoPlist.strings */,
+				463E5B61195F94C400FA26BE /* main.m */,
+				463E5B63195F94C400FA26BE /* Konan_mindmap-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		463E5B7A195F94C400FA26BE /* Konan_mindmapTests */ = {
+			isa = PBXGroup;
+			children = (
+				463E5B80195F94C500FA26BE /* Konan_mindmapTests.m */,
+				463E5B7B195F94C400FA26BE /* Supporting Files */,
+			);
+			path = Konan_mindmapTests;
+			sourceTree = "<group>";
+		};
+		463E5B7B195F94C400FA26BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				463E5B7C195F94C400FA26BE /* Konan_mindmapTests-Info.plist */,
+				463E5B7D195F94C400FA26BE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		463E5B51195F94C400FA26BE /* Konan_mindmap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 463E5B84195F94C500FA26BE /* Build configuration list for PBXNativeTarget "Konan_mindmap" */;
+			buildPhases = (
+				463E5B4E195F94C400FA26BE /* Sources */,
+				463E5B4F195F94C400FA26BE /* Frameworks */,
+				463E5B50195F94C400FA26BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Konan_mindmap;
+			productName = Konan_mindmap;
+			productReference = 463E5B52195F94C400FA26BE /* Konan_mindmap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		463E5B72195F94C400FA26BE /* Konan_mindmapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 463E5B87195F94C500FA26BE /* Build configuration list for PBXNativeTarget "Konan_mindmapTests" */;
+			buildPhases = (
+				463E5B6F195F94C400FA26BE /* Sources */,
+				463E5B70195F94C400FA26BE /* Frameworks */,
+				463E5B71195F94C400FA26BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				463E5B79195F94C400FA26BE /* PBXTargetDependency */,
+			);
+			name = Konan_mindmapTests;
+			productName = Konan_mindmapTests;
+			productReference = 463E5B73195F94C400FA26BE /* Konan_mindmapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		463E5B4A195F94C400FA26BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = takemi;
+				TargetAttributes = {
+					463E5B72195F94C400FA26BE = {
+						TestTargetID = 463E5B51195F94C400FA26BE;
+					};
+				};
+			};
+			buildConfigurationList = 463E5B4D195F94C400FA26BE /* Build configuration list for PBXProject "Konan_mindmap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 463E5B49195F94C400FA26BE;
+			productRefGroup = 463E5B53195F94C400FA26BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				463E5B51195F94C400FA26BE /* Konan_mindmap */,
+				463E5B72195F94C400FA26BE /* Konan_mindmapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		463E5B50195F94C400FA26BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463E5B6E195F94C400FA26BE /* Images.xcassets in Resources */,
+				463E5B8B195FA08C00FA26BE /* gurade.png in Resources */,
+				463E5B8D195FA66100FA26BE /* chichi.png in Resources */,
+				463E5B60195F94C400FA26BE /* InfoPlist.strings in Resources */,
+				463E5B69195F94C400FA26BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463E5B71195F94C400FA26BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463E5B7F195F94C400FA26BE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		463E5B4E195F94C400FA26BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463E5B62195F94C400FA26BE /* main.m in Sources */,
+				463E5B66195F94C400FA26BE /* LCAppDelegate.m in Sources */,
+				463E5B6C195F94C400FA26BE /* LCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463E5B6F195F94C400FA26BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463E5B81195F94C500FA26BE /* Konan_mindmapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		463E5B79195F94C400FA26BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 463E5B51195F94C400FA26BE /* Konan_mindmap */;
+			targetProxy = 463E5B78195F94C400FA26BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		463E5B5E195F94C400FA26BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				463E5B5F195F94C400FA26BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		463E5B67195F94C400FA26BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				463E5B68195F94C400FA26BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		463E5B7D195F94C400FA26BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				463E5B7E195F94C400FA26BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		463E5B82195F94C500FA26BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		463E5B83195F94C500FA26BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		463E5B85195F94C500FA26BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Konan_mindmap/Konan_mindmap-Prefix.pch";
+				INFOPLIST_FILE = "Konan_mindmap/Konan_mindmap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		463E5B86195F94C500FA26BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Konan_mindmap/Konan_mindmap-Prefix.pch";
+				INFOPLIST_FILE = "Konan_mindmap/Konan_mindmap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		463E5B88195F94C500FA26BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Konan_mindmap.app/Konan_mindmap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Konan_mindmap/Konan_mindmap-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Konan_mindmapTests/Konan_mindmapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		463E5B89195F94C500FA26BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Konan_mindmap.app/Konan_mindmap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Konan_mindmap/Konan_mindmap-Prefix.pch";
+				INFOPLIST_FILE = "Konan_mindmapTests/Konan_mindmapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		463E5B4D195F94C400FA26BE /* Build configuration list for PBXProject "Konan_mindmap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463E5B82195F94C500FA26BE /* Debug */,
+				463E5B83195F94C500FA26BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		463E5B84195F94C500FA26BE /* Build configuration list for PBXNativeTarget "Konan_mindmap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463E5B85195F94C500FA26BE /* Debug */,
+				463E5B86195F94C500FA26BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		463E5B87195F94C500FA26BE /* Build configuration list for PBXNativeTarget "Konan_mindmapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463E5B88195F94C500FA26BE /* Debug */,
+				463E5B89195F94C500FA26BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 463E5B4A195F94C400FA26BE /* Project object */;
+}
