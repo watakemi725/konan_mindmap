@@ -13,9 +13,26 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="vfJ-C5-7M5">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="QHa-wK-jjU">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Add" id="sOR-Si-cDe">
+                                        <connections>
+                                            <action selector="newidea" destination="vXZ-lx-hvc" id="1ds-Hk-VrL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="BBV-of-Dzf"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="PAq-Xd-DdP"/>
+                                    <barButtonItem title="Item" id="RCy-Ca-E1Y"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="LfQ-T6-SeY"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="G0M-dA-47c"/>
+                                    <barButtonItem title="Item" id="Okf-9J-4uj"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

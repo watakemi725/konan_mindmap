@@ -23,7 +23,7 @@
     
     map.bounces=NO;
     
-    CGRect rect = CGRectMake(0, 0, 1000 , 1000);
+    CGRect rect = CGRectMake(0, 0, 1000 , 524);
     //設定したサイズのUIImageViewを作成
     imageView = [[UIImageView alloc]initWithFrame:rect];
     
@@ -41,8 +41,8 @@
     
     map.delegate = self;
     
-    map.minimumZoomScale = 0.25;
-    map.maximumZoomScale = 2.0;
+//    map.minimumZoomScale = 0.25;
+//    map.maximumZoomScale = 2.0;
     
     
     //ボタンを作成
@@ -58,6 +58,57 @@
 }
 
 
+-(IBAction)newidea{
+    NSLog(@"newidea");
+    
+    //画面上にtextfield生成
+//場所をずらして表示させるには??
+    
+    // UITextFieldのインスタンスを生成
+    CGRect rect = CGRectMake(10, 10, 200, 25);
+    UITextField *textField = [[UITextField alloc]initWithFrame:rect];
+    
+    // 枠線のスタイルを設定
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    
+    // テキストを左寄せにする
+    textField.textAlignment = UITextAlignmentLeft;
+    
+    // ラベルのテキストのフォントを設定
+    textField.font = [UIFont fontWithName:@"Helvetica" size:14];
+    
+    // プレースホルダ
+    textField.placeholder = @"名前を入力してください";
+    
+    
+    // キーボードの種類を設定
+    textField.keyboardType = UIKeyboardTypeDefault;
+    
+    // リターンキーの種類を設定
+    textField.returnKeyType = UIReturnKeyDefault;
+    
+    // 編集中にテキスト消去ボタンを表示
+    textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    
+    // デリゲートを設定
+    textField.delegate = self;
+    
+    // UITextFieldのインスタンスをビューに追加
+    [map addSubview:textField];
+    
+}
+
+/**
+ * キーボードでReturnキーが押されたとき
+ * @param textField イベントが発生したテキストフィールド
+ */
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    // キーボードを隠す
+    [self.view endEditing:YES];
+    
+    return YES;
+}
 
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
