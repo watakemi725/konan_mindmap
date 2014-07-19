@@ -8,15 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LCViewController : UIViewController<UIScrollViewDelegate>{
+@interface LCViewController : UIViewController{
 
-    IBOutlet UIScrollView *map;
+
     
-    UIImageView *imageView;
 
+    IBOutlet UITextView *textview;
+    IBOutlet UILabel *label;
 }
 
--(IBAction)newidea;
+-(IBAction)go;
+
 
 
 @end

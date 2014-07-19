@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		460D3C5E197A7A3900B037A2 /* LCMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 460D3C5D197A7A3900B037A2 /* LCMapViewController.m */; };
 		463E5B56195F94C400FA26BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463E5B55195F94C400FA26BE /* Foundation.framework */; };
 		463E5B58195F94C400FA26BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463E5B57195F94C400FA26BE /* CoreGraphics.framework */; };
 		463E5B5A195F94C400FA26BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463E5B59195F94C400FA26BE /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		460D3C5C197A7A3900B037A2 /* LCMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCMapViewController.h; sourceTree = "<group>"; };
+		460D3C5D197A7A3900B037A2 /* LCMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMapViewController.m; sourceTree = "<group>"; };
 		463E5B52195F94C400FA26BE /* Konan_mindmap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konan_mindmap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		463E5B55195F94C400FA26BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		463E5B57195F94C400FA26BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +124,8 @@
 				463E5B64195F94C400FA26BE /* LCAppDelegate.h */,
 				463E5B65195F94C400FA26BE /* LCAppDelegate.m */,
 				463E5B67195F94C400FA26BE /* Main.storyboard */,
+				460D3C5C197A7A3900B037A2 /* LCMapViewController.h */,
+				460D3C5D197A7A3900B037A2 /* LCMapViewController.m */,
 				463E5B6A195F94C400FA26BE /* LCViewController.h */,
 				463E5B6B195F94C400FA26BE /* LCViewController.m */,
 				463E5B6D195F94C400FA26BE /* Images.xcassets */,
@@ -258,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				460D3C5E197A7A3900B037A2 /* LCMapViewController.m in Sources */,
 				463E5B62195F94C400FA26BE /* main.m in Sources */,
 				463E5B66195F94C400FA26BE /* LCAppDelegate.m in Sources */,
 				463E5B6C195F94C400FA26BE /* LCViewController.m in Sources */,
@@ -465,6 +471,7 @@
 				463E5B86195F94C500FA26BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		463E5B87195F94C500FA26BE /* Build configuration list for PBXNativeTarget "Konan_mindmapTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +480,7 @@
 				463E5B89195F94C500FA26BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
