@@ -28,7 +28,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
     map.frame=self.view.bounds;
     
     map.bounces=NO;
