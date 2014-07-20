@@ -30,4 +30,8 @@
 
 -(void)addidea;
 
+//-(void)newlabel
+
+-(float)gageOneAnimation2:(float)speedTime fromNum:(float)StartNum DetailStop:(float)StopNum ;
+
 @end

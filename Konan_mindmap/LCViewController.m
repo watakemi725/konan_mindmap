@@ -8,7 +8,12 @@
 
 #import "LCViewController.h"
 
-@interface LCViewController ()
+@interface LCViewController (){
+    
+    //set up a placeholder variable for the textfield user typing
+    //UITextView *currentTextView;
+    
+}
 
 @end
 
@@ -19,17 +24,45 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-
+[self addDoneToolBarToKeyboard:mytextview];
     
 }
 
 -(IBAction)go{
     
-    label.text=textview.text;
-    NSLog(@"%@",textview.text);
+    label.text=mytextview.text;
+    NSLog(@"%@",mytextview.text);
     
 }
 
+
+
+
+-(void)addDoneToolBarToKeyboard:(UITextView *)textView
+{
+    UIToolbar* doneToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
+    doneToolbar.barStyle = UIBarStyleBlackTranslucent;
+    doneToolbar.items = [NSArray arrayWithObjects:
+                         [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
+                         [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneButtonClickedDismissKeyboard)],
+                         nil];
+    [doneToolbar sizeToFit];
+    textView.inputAccessoryView = doneToolbar;
+}
+
+//remember to set your text view delegate
+//but if you only have 1 text view in your view controller
+//you can simply change currentTextField to the name of your text view
+//and ignore this textViewDidBeginEditing delegate method
+- (void)textViewDidBeginEditing:(UITextView *)textView
+{
+    mytextview = textView;
+}
+
+-(void)doneButtonClickedDismissKeyboard
+{
+    [mytextview resignFirstResponder];
+}
 
 
 //- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView

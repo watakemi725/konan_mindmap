@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LCViewController : UIViewController{
+@interface LCViewController : UIViewController<UITextViewDelegate>{
 
 
     
 
-    IBOutlet UITextView *textview;
+    IBOutlet UITextView *mytextview;
     IBOutlet UILabel *label;
 }
 

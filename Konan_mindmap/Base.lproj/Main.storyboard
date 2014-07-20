@@ -58,7 +58,7 @@
                     </view>
                     <connections>
                         <outlet property="label" destination="gsi-zQ-MsS" id="Cy2-c5-IhR"/>
-                        <outlet property="textview" destination="wi7-Wi-lcn" id="CZG-BI-RwJ"/>
+                        <outlet property="mytextview" destination="wi7-Wi-lcn" id="dD5-Z2-YTM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGE-u5-iLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
