@@ -8,7 +8,11 @@
 
 #import "LCMapViewController.h"
 
-@interface LCMapViewController ()
+@interface LCMapViewController (){
+    
+    
+    
+}
 
 @end
 
@@ -110,11 +114,25 @@
      
      */
     
-    
-    x=map.frame.origin.x;
+    x=0;
+   // x=map.frame.origin.x;
     y=map.frame.origin.y;
     
     
+    //[self addidea:<#(int)#> y:<#(int)#> text:<#(NSString *)#>]
+    
+    
+    
+    
+//    pointArray=[NSMutableArray arrayWithCapacity:2];
+//    [pointArray addObject:@[x_point,y_point]];z
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    UITapGestureRecognizer *gs = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(TapGesture:)];
+   
+    [map addGestureRecognizer:gs];
 }
 
 
@@ -125,7 +143,10 @@
     //場所をずらして表示させるには??
     
     // UITextFieldのインスタンスを生成
-    CGRect rect = CGRectMake(100,250 , 200, 25);
+    CGRect rect = CGRectMake(x,y , 200, 25);
+    x=x+50;
+    y=y+50;
+    
     UITextField *textField = [[UITextField alloc]initWithFrame:rect];
     
     // 枠線のスタイルを設定
@@ -138,8 +159,7 @@
     textField.font = [UIFont fontWithName:@"Helvetica" size:14];
     
     // プレースホルダ
-    textField.placeholder = @"名前を入力してください";
-    
+    textField.placeholder = @"アイディアを入力してください";
     
     // キーボードの種類を設定
     textField.keyboardType = UIKeyboardTypeDefault;
@@ -160,6 +180,15 @@
 -(IBAction)wao{
     [self addidea];
 }
+
+-(void)TapGesture:(UITapGestureRecognizer *)sender{
+    CGPoint point = [sender locationOfTouch:0 inView:map];
+    NSLog(@"tap point: %@", NSStringFromCGPoint(point));
+    NSString *example;
+    [self addidea:point.x y:point.y text:example];
+
+}
+
 
 -(void)addidea{
     
@@ -204,6 +233,60 @@
                              
     
 }
+
+
+-(void)addidea:(int)point_x y:(int)point_y text:(NSString *)idea_text{
+    
+    
+   // float vecdata[3][2] = { {39 , 130},{40 , 140},{41 , 135} };
+    
+    
+    
+    NSLog(@"newidea");
+    
+    //画面上にtextfield生成
+    //場所をずらして表示させるには??
+    
+    // UITextFieldのインスタンスを生成
+    
+    CGRect rect = CGRectMake(point_x-100,point_y, 200, 25);
+    
+//    CGRect rect = CGRectMake(vecdata[x][0],vecdata[x][1] , 200, 25);
+//    x=x+1;
+//    y=y+50;
+    
+    UITextField *textField = [[UITextField alloc]initWithFrame:rect];
+    
+    // 枠線のスタイルを設定
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    
+    // テキストを左寄せにする
+    textField.textAlignment = UITextAlignmentLeft;
+    
+    // ラベルのテキストのフォントを設定
+    textField.font = [UIFont fontWithName:@"Helvetica" size:14];
+    
+    // プレースホルダ
+    textField.placeholder = @"名前を入力してください";
+    
+    // キーボードの種類を設定
+    textField.keyboardType = UIKeyboardTypeDefault;
+    
+    // リターンキーの種類を設定
+    textField.returnKeyType = UIReturnKeyDefault;
+    
+    // 編集中にテキスト消去ボタンを表示
+    textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    
+    // デリゲートを設定
+    textField.delegate = self;
+    
+    // UITextFieldのインスタンスをビューに追加
+    [map addSubview:textField];
+    
+    
+}
+
 
 
 /**
